@@ -1,0 +1,126 @@
+/* about.css */
+
+.about-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.typewriter {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.typewriter span {
+  color: #00f7ff;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  max-width: 600px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 247, 255, 0.2);
+}
+
+.card.center {
+  flex-direction: column;
+}
+
+.card.shift {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 1rem;
+  border: 3px solid #00f7ff;
+  transition: transform 0.3s ease;
+}
+
+.card.shift .profile-img {
+  transform: translateX(-10px);
+}
+
+.card-text {
+  text-align: left;
+  max-width: 60%;
+}
+
+.card-text h2 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.card-text p {
+  margin-top: 0.5rem;
+  color: #cccccc;
+}
+
+.tech-stack {
+  margin: 3rem 0 1.5rem;
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.stack-list span {
+  background-color: #222;
+  color: #00f7ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+}
+
+.stack-list span:hover {
+  transform: scale(1.1);
+  background-color: #00f7ff;
+  color: #000;
+}
+
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #00f7ff;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
