@@ -15,8 +15,12 @@ function Loader() {
                     }
                 </h1>
                 <p className="loader-description">
-                    Powering your tech, wherever you are! 🚚✨ Fazu Circuit Walal delivers high-quality PC parts and expert circuit solutions — trusted by customers all over India 🇮🇳. Fast, reliable, and made for performance. Get ready!
-                </p>
+    Welcome to <strong>Fazu Circuit Walal</strong> — your one-stop destination for premium PC components, expert circuit repairs, and custom tech solutions! 💻🛠<br /><br />
+    We proudly serve customers across <strong>all states of India 🇮🇳</strong>, offering doorstep delivery of genuine hardware — from high-speed SSDs and RAM to powerful GPUs, reliable PSUs, and more. 📦✨<br /><br />
+    Whether you're upgrading your system, fixing short circuits, or building your dream setup, we’ve got your back — with <strong>trusted service</strong>, <strong>affordable pricing</strong>, and <strong>lightning-fast support</strong>!⚡<br /><br />
+    Sit tight — we’re loading the tech experience you deserve.
+</p>
+
             </div>
         </div>
     );
