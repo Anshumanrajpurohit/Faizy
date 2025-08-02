@@ -1,0 +1,55 @@
+.footer {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  margin-bottom: 0.8rem;
+  color: #00d4ff;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons {
+
+  display: flex;
+  gap: 1rem;
+  font-size: 2.4rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: #ccc;
+  transform: scale(1.3);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00d4ff;
+}

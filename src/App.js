@@ -9,6 +9,7 @@ import Marquee from '../src/component/marquee';
 import ProductGrid from '../src/component/productGrid';
 import Home from '../src/component/home';
 import About from '../src/component/aboutme';
+import Footer from '../src/component/footer';
 
 function AppContent() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function AppContent() {
         <Route path="/" element={<><Home /><ProductGrid /></>} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -45,8 +45,8 @@ function AboutUs() {
           className="profile-img"
         />
         <div className="card-text">
-          <h2>Your Name</h2>
-          <p>Full-stack web developer with a passion for building cool projects and solving real-world problems. Skilled in React, Node.js, Express, MongoDB, and more.</p>
+          <h2>Anshuman R . S . </h2>
+          <p>Full-stack web developer with a passion for building cool projects and solving real-world problems. Skilled in React, Node.js,Next , SQL, PL SQL, and more.</p>
         </div>
       </div>
 

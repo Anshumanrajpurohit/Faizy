@@ -1,56 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* navbar.css */
 
+/* Sticky & styled navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1e1e2f;
-    padding: 0.8rem 2rem;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #1e1e2f, #27293d);
+  margin: 0 !important;
+  padding: 0.8rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* Logo */
 .logo img {
-    height: 60px;
-    width: 60px;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: rotate(8deg) scale(1.05);
 }
 
+/* Navigation links */
 .nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-links li {
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-links li:hover {
-    color: #00d4ff;
+  color: #00d4ff;
+  transform: translateY(-2px);
 }
 
+/* Hover underline */
 .nav-links li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 2px;
-    width: 0%;
-    background-color: #00d4ff;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: #00d4ff;
+  transition: width 0.3s ease;
 }
 
 .nav-links li:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+/* Search bar */
+.search-bar input[type="search"] {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #2e2e42;
+  color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: #aaa;
+}
+
+.search-bar input[type="search"]:focus {
+  box-shadow: 0 0 0 2px #00d4ff;
 }
