@@ -16,18 +16,21 @@ function AppContent() {
   const isHome = location.pathname === '/';
 
   return (
-    <>
-      <Navbar />
-      <KiteTailCanvas />
-      {isHome && <Loader />}
-      {isHome && <Marquee />}
+    <div className="app-wrapper">
+      <div className="blur-bg" />
+      <div className="content">
+        <Navbar />
+        <KiteTailCanvas />
+        {isHome && <Loader />}
+        {isHome && <Marquee />}
 
-      <Routes>
-        <Route path="/" element={<><Home /><ProductGrid /></>} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer />
-    </>
+        <Routes>
+          <Route path="/" element={<><Home /><ProductGrid /></>} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </div>
   );
 }
 

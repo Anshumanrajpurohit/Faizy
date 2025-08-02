@@ -1,21 +1,29 @@
-/* loader.css */
-
 .loader-wrapper {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* optional overlay if background image exists */
+}
+
+.loader-left {
+    text-align: center;
+    max-width: 700px;
 }
 
 .loader-text {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #00d4ff;
     display: flex;
     gap: 2px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .loader-text span {
@@ -29,4 +37,11 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.loader-description {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
 }

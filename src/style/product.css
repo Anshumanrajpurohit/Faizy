@@ -12,8 +12,12 @@
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(30, 30, 30, 0.5); /* Dark translucent background */
+    backdrop-filter: blur(4px); /* Optional: adds subtle blur behind */
+    color: #fff; /* Makes text visible on dark bg */
 }
+
 
 .product-card:hover {
     transform: translateY(-6px);
